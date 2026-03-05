@@ -93,6 +93,7 @@ data class BadgeEntity(
     val name: String,
     val description: String,
     val tier: String,
+    val criteriaJson: String, // Serialized BadgeCriteria
     val isUnlocked: Boolean = false,
     val unlockedAt: Long? = null,
     val progress: Float = 0f
