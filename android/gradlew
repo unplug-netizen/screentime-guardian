@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Gradle Wrapper Script Placeholder
+# In production, use: gradle wrapper --gradle-version 8.2
+
+exec gradle "$@"

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ScreenTime Guardian</string>
+    <string name="accessibility_service_description">Erforderlich für App-Blocking bei Zeitlimits</string>
+    <string name="notification_channel_limits">Zeitlimits</string>
+    <string name="notification_channel_badges">Erfolge</string>
+</resources>
