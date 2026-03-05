@@ -152,25 +152,8 @@ fun AppNavigation() {
         ) {
             composable("dashboard") { DashboardScreen() }
             composable("focus") { FocusModeScreen() }
-            composable("badges") { BadgesScreen() }
+            composable("badges") { com.screentime.guardian.presentation.screens.BadgesScreen() }
             composable("social") { ChallengesScreen() }
         }
-    }
-}
-
-// Placeholder für Badges Screen
-@Composable
-fun BadgesScreen() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(DarkBackgroundPrimary),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "Badges",
-            style = MaterialTheme.typography.headlineLarge,
-            color = TextPrimary
-        )
     }
 }
