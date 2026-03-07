@@ -1,0 +1,45 @@
+/**
+ * RevenueCat Configuration
+ * 
+ * Replace the API keys below with your actual RevenueCat keys.
+ * Get them from: https://app.revenuecat.com
+ * 
+ * SECURITY: Never commit the actual keys to version control.
+ * Use environment variables or local.properties for production.
+ */
+
+object RevenueCatConfig {
+    // Replace with your RevenueCat API Key
+    const val API_KEY = "YOUR_REVENUECAT_API_KEY"
+    
+    // Product IDs configured in RevenueCat Dashboard
+    object Products {
+        const val MONTHLY_PREMIUM = "com.screentime.guardian.premium.monthly"
+        const val YEARLY_PREMIUM = "com.screentime.guardian.premium.yearly"
+        const val LIFETIME = "com.screentime.guardian.premium.lifetime"
+    }
+    
+    // Entitlement IDs
+    object Entitlements {
+        const val PREMIUM = "premium"
+    }
+}
+
+/**
+ * Setup Instructions:
+ * 
+ * 1. Create account at https://app.revenuecat.com
+ * 2. Create new app: "ScreenTime Guardian"
+ * 3. Add products in App Store Connect & Google Play Console first
+ * 4. Configure products in RevenueCat Dashboard
+ * 5. Copy API keys:
+ *    - Android: Public SDK Key
+ *    - iOS: Public SDK Key (different from Android)
+ * 
+ * For iOS (RevenueCat.swift):
+ * import RevenueCat
+ * Purchases.configure(withAPIKey: "YOUR_IOS_API_KEY")
+ * 
+ * For Android (MainActivity.kt):
+ * Purchases.configure(this, "YOUR_ANDROID_API_KEY")
+ */

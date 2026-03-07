@@ -1,0 +1,45 @@
+//
+//  RevenueCatConfig.swift
+//  ScreenTimeGuardian
+//
+//  Configuration template - Replace with actual API key
+//
+
+import Foundation
+import RevenueCat
+
+enum RevenueCatConfig {
+    // Replace with your RevenueCat Public SDK Key for iOS
+    static let apiKey = "YOUR_REVENUECAT_IOS_API_KEY"
+    
+    enum ProductIDs {
+        static let monthlyPremium = "com.screentime.guardian.premium.monthly"
+        static let yearlyPremium = "com.screentime.guardian.premium.yearly"
+        static let lifetime = "com.screentime.guardian.premium.lifetime"
+    }
+    
+    enum Entitlements {
+        static let premium = "premium"
+    }
+}
+
+/**
+ Setup Instructions:
+ 
+ 1. Add RevenueCat SPM dependency:
+    - URL: https://github.com/RevenueCat/purchases-ios
+    - Version: up to next major 5.x
+ 
+ 2. Configure in ScreenTimeGuardianApp.swift:
+    init() {
+        Purchases.configure(withAPIKey: RevenueCatConfig.apiKey)
+    }
+ 
+ 3. Create products in App Store Connect first:
+    - Monthly: com.screentime.guardian.premium.monthly
+    - Yearly: com.screentime.guardian.premium.yearly
+    - Lifetime: com.screentime.guardian.premium.lifetime
+ 
+ 4. Add products to RevenueCat Dashboard
+ 5. Test with StoreKit Configuration file
+ */
