@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">Erforderlich für App-Blocking bei Zeitlimits</string>
+    <string name="app_name">ScreenTime Guardian</string>
+    <string name="notification_channel_badges">Erfolge</string>
+    <string name="notification_channel_limits">Zeitlimits</string>
+    <style name="Theme.ScreenTimeGuardian" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

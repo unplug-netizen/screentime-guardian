@@ -130,4 +130,5 @@ fi
 # Use "xargs" to parse quoted args.
 #
 # With -n://services.gradle.org/distributions/gradle-8.2-bin.zip
-```
+
+exec "$JAVACMD" "$@"

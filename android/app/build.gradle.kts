@@ -1,8 +1,9 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.20"
-    id("com.google.gms.google-services")
+    id("org.jetbrains.kotlin.android") version "1.9.0"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.0"
+    // TODO: Re-enable after adding google-services.json
+    // id("com.google.gms.google-services")
     id("kotlin-kapt")
 }
 
@@ -100,15 +101,15 @@ dependencies {
     // DataStore (Preferences)
     implementation("androidx.datastore:datastore-preferences:1.0.0")
 
-    // Firebase
-    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
-    implementation("com.google.firebase:firebase-auth-ktx")
-    implementation("com.google.firebase:firebase-firestore-ktx")
-    implementation("com.google.firebase:firebase-analytics-ktx")
-    implementation("com.google.firebase:firebase-dynamic-links-ktx")
+    // Firebase - TODO: Re-enable after adding google-services.json
+    // implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+    // implementation("com.google.firebase:firebase-auth-ktx")
+    // implementation("com.google.firebase:firebase-firestore-ktx")
+    // implementation("com.google.firebase:firebase-analytics-ktx")
+    // implementation("com.google.firebase:firebase-dynamic-links-ktx")
 
-    // RevenueCat (Subscription)
-    implementation("com.revenuecat.purchases:purchases:7.3.0")
+    // RevenueCat (Subscription) - TODO: Add API key
+    // implementation("com.revenuecat.purchases:purchases:7.3.0")
 
     // Biometric
     implementation("androidx.biometric:biometric:1.1.0")
